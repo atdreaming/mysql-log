@@ -15,8 +15,7 @@
 	`alter table table_name add index index_name(field);`	*添加索引*
 	`alter table table_name engine=innoDB;`	*更改引擎*
 <b>当让数据表改用另一种存储引擎时，能否达到目的还要取决于新老两种存储引擎的功能是否兼容：</b>
-
-<ul style="color:#666666">
+><ul style="color:#666666">
 <li>如果一个数据表包含这一个blob数据列，将不能把它转换为使用memory引擎。因为memory引擎不支持blob数据列。</li>
 <li>如果有一个MyISAM数据表包含着fulltext或spatial索引，将不能把它转换为使用另一种引擎，因为只有MyISAM支持这两种索引。</li>
 <li>Memory数据表存在于内存中，在服务器退出时将消失，因此，如果希望某个数据表的内容在服务器重新启动后仍然存在，就不应该把它转换为memory类型。</li>
