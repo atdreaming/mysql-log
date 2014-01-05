@@ -54,6 +54,7 @@
 </tr></table>
 
 #### IN 操作符 ####
+
 	select 字段名 from 表名 where 字段名 IN (值1，值2，值3……);
 	
 	select 字段名 from 表名 where 字段名 NOT IN (值1，值2，值3……);
@@ -74,7 +75,7 @@
 [:upper:]</td><td>   任意大写字母（同 [A-Z]）</td></tr><tr><td>
 [:xdigit:]</td><td>    任意十六进制数字（同 [a-fA-f0-9])
 </td></tr></table>
-
+	
 	`\\`    转义  匹配特殊字符 包括 `. | []` 以及迄今为止使用过的其他特殊字符
 	      也可用来转义元字符   
 	为了匹配特殊字符  `\\`  为前导
@@ -90,6 +91,7 @@
 </table>
 
 #### 基本字符匹配 ####
+
 	select 字段名 from 表名 where 字段名 REGEXP ‘1000’ ORDER BY 字段名;
 	查询字段中有 1000 的行
 
@@ -113,6 +115,7 @@ $   </td><td>   文本的结尾 </td></tr><tr><td>
 </table>
 
 ## 拼接字符串 ##
+
 	select  Concat(字段名, ‘（‘ , 字段名, ‘）’)  from 表名;
 >
 例：
