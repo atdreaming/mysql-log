@@ -52,7 +52,8 @@
 <td>>=</td>  <td>大于等于</td></tr><tr>
 <td>BETWEEN</td>  <td>在指定的两个值之间</td>
 </tr></table>
-## IN 操作符 ##
+
+##IN 操作符 
 
 	select 字段名 from 表名 where 字段名 IN (值1，值2，值3……);<br/>
 	select 字段名 from 表名 where 字段名 NOT IN (值1，值2，值3……);
