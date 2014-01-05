@@ -53,7 +53,7 @@
 <td>BETWEEN</td>  <td>在指定的两个值之间</td>
 </tr></table>
 
-#### IN 操作符 ####
+## IN 操作符 ##
 
 	select 字段名 from 表名 where 字段名 IN (值1，值2，值3……);
 	
@@ -73,7 +73,7 @@
 [:punct:]</td><td>   即不在 [:print:] 又不在 [:cntrl:] 中的任意字符</td></tr><tr><td>
 [:space:]</td><td>   包括空格在内的任意空白字符（同 [\\f\\n\\r\\t\\v]）</td></tr><tr><td>
 [:upper:]</td><td>   任意大写字母（同 [A-Z]）</td></tr><tr><td>
-[:xdigit:]</td><td>    任意十六进制数字（同 [a-fA-f0-9])
+[:xdigit:]</td><td>    任意十六进制数字（同 [a-fA-f0-9]）
 </td></tr></table>
 	
 	`\\`    转义  匹配特殊字符 包括 `. | []` 以及迄今为止使用过的其他特殊字符
