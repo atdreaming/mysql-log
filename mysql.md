@@ -22,6 +22,7 @@
 <li>如果你使用了一个merge数据表来管理一组MyISAM数据表，就应该避免使用alert table语句去改变个别MyISAM数据表的结构，除非要决定对所有的成员MyISAM数据表和那个merge数据表做出同样的修改。Merge数据表的正常使用徐雅其全体成员MyISAM数据表有着同样的结构。</li>
 <li>InnoDB数据表可以被转换为使用另一种存储引擎。如果对InnoDB数据表定义了外键约束条件，那些约束条件在转换后将不复存在，因为只有InnoDB才支持外键。</li>
 </ul>
+
 ####删除索引####
 	drop index index_name on table_name
 ####删除数据####
